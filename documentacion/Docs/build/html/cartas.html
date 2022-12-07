@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cartas module &mdash; documentación de calculadora - 0.0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="ActividadCalculadora module" href="ActividadCalculadora.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> calculadora
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">proyecto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ActividadCalculadora.html">ActividadCalculadora module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">cartas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cartas.Carta"><code class="docutils literal notranslate"><span class="pre">Carta</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Carta.tipo"><code class="docutils literal notranslate"><span class="pre">Carta.tipo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Carta.figura"><code class="docutils literal notranslate"><span class="pre">Carta.figura</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Carta.palo"><code class="docutils literal notranslate"><span class="pre">Carta.palo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cartas.FIGURAS_POSIBLES"><code class="docutils literal notranslate"><span class="pre">FIGURAS_POSIBLES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cartas.Mazo"><code class="docutils literal notranslate"><span class="pre">Mazo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.cant_cartas"><code class="docutils literal notranslate"><span class="pre">Mazo.cant_cartas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.generar"><code class="docutils literal notranslate"><span class="pre">Mazo.generar()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.cartas"><code class="docutils literal notranslate"><span class="pre">Mazo.cartas</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.generar_personalizado"><code class="docutils literal notranslate"><span class="pre">Mazo.generar_personalizado()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.mezclar"><code class="docutils literal notranslate"><span class="pre">Mazo.mezclar()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.poner"><code class="docutils literal notranslate"><span class="pre">Mazo.poner()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.tomar"><code class="docutils literal notranslate"><span class="pre">Mazo.tomar()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartas.Mazo.vaciar"><code class="docutils literal notranslate"><span class="pre">Mazo.vaciar()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cartas.PALOS_POSIBLES"><code class="docutils literal notranslate"><span class="pre">PALOS_POSIBLES</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">calculadora</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">proyecto</a></li>
+      <li class="breadcrumb-item active">cartas module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/cartas.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-cartas">
+<span id="cartas-module"></span><h1>cartas module<a class="headerlink" href="#module-cartas" title="Enlace permanente a este encabezado"></a></h1>
+<p>Mazos y cartas.</p>
+<p>Contiene un Mazo y una clase Carta.</p>
+<p class="rubric">Tipos de mazos y cartas disponibles:</p>
+<ul class="simple">
+<li><p>«español»: Cartas del 1 al 12 más dos comodines. Los palos son «espada»,
+«oro», «basto» y «copas».</p></li>
+<li><p>«francés»: Cartas del 2 al 10 más las A, J, Q, K y dos comodines. Los palos
+son «pica», «corazón», «trébol» y «diamantes».</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="cartas.Carta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cartas.</span></span><span class="sig-name descname"><span class="pre">Carta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figura</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Carta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Carta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Representa a una carta.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cartas.Carta.tipo">
+<span class="sig-name descname"><span class="pre">tipo</span></span><a class="headerlink" href="#cartas.Carta.tipo" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Tipo de mazo al que pertenece, «español» o «francés».</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cartas.Carta.figura">
+<span class="sig-name descname"><span class="pre">figura</span></span><a class="headerlink" href="#cartas.Carta.figura" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Figura de esta carta, ver FIGURAS_POSIBLES. Además puede ser
+«comodín».</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cartas.Carta.palo">
+<span class="sig-name descname"><span class="pre">palo</span></span><a class="headerlink" href="#cartas.Carta.palo" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Palo al que pertenece esta carta, ver PALOS_POSIBLES. Si la figura
+es «comodín», el palo es None.</p>
+</dd></dl>
+
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tipo</strong> – Tipo de mazo al que pertenece, «español» o «francés».</p></li>
+<li><p><strong>figura</strong> – Figura de esta carta, ver FIGURAS_POSIBLES. Además puede ser
+«comodín».</p></li>
+<li><p><strong>palo</strong> – Palo al que pertenece esta carta, ver PALOS_POSIBLES. Si la figura
+es «comodín», el palo es None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="cartas.FIGURAS_POSIBLES">
+<span class="sig-prename descclassname"><span class="pre">cartas.</span></span><span class="sig-name descname"><span class="pre">FIGURAS_POSIBLES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'español':</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12],</span> <span class="pre">'francés':</span> <span class="pre">[2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">'A',</span> <span class="pre">'J',</span> <span class="pre">'Q',</span> <span class="pre">'K']}</span></em><a class="headerlink" href="#cartas.FIGURAS_POSIBLES" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Figuras soportadas por Carta.</p>
+<p>No incluye «comodín»</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cartas.Mazo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cartas.</span></span><span class="sig-name descname"><span class="pre">Mazo</span></span><a class="reference internal" href="_modules/cartas.html#Mazo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Un mazo de cartas.</p>
+<p>Al crear el mazo está vacío.</p>
+<p>Attributes:</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.cant_cartas">
+<span class="sig-name descname"><span class="pre">cant_cartas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.cant_cartas"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.cant_cartas" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Obtener la cantidad de cartas del mazo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.generar">
+<span class="sig-name descname"><span class="pre">generar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'español'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">juego</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.generar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.generar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Crear un mazo estándar.</p>
+<p class="rubric">Tipos y Juegos disponibles</p>
+<ul class="simple">
+<li><p>«español»: Cartas del 1 al 12 más dos comodines. Los palos son espada,
+oro, basto y copas.</p>
+<ul>
+<li><p>50: Todas las cartas del mazo más dos comodines.</p></li>
+<li><p>48: Todas las cartas del mazo menos los dos comodines.</p></li>
+<li><p>40: Todas las cartas del mazo menos los comodines, los 8 y los 9.</p></li>
+<li><p>36: Todas las cartas del mazo menos los comodines, los 8, los 9 y
+los 10.</p></li>
+</ul>
+</li>
+<li><p>«francés»: Cartas del 2 al 10 más las A, J, Q, K y dos comodines. Los
+palos son pica, corazón, trébol y diamantes.</p>
+<ul>
+<li><p>54: Todas las cartas del mazo más dos comodines.</p></li>
+<li><p>52: Todas las cartas del mazo menos los dos comodines.</p></li>
+</ul>
+</li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tipo</strong> – Tipo de mazo a utilizar. «español» o «francés».</p></li>
+<li><p><strong>juego</strong> – Número de cartas a utilizar. Los posibles juegos dependen del
+tipo de mazo. Ver posibilidades abajo</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cartas.Mazo.cartas">
+<span class="sig-name descname"><span class="pre">cartas</span></span><a class="headerlink" href="#cartas.Mazo.cartas" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Lista que contiene a las cartas del mazo, los primeros
+elementos son los que están más abajo en el mazo y los últimos
+son los que están arriba del mazo.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.generar_personalizado">
+<span class="sig-name descname"><span class="pre">generar_personalizado</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figuras</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cant_comodines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/cartas.html#Mazo.generar_personalizado"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.generar_personalizado" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Generar mazo a partir de las figuras (números), palos y cantidad de
+comodines.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tipo</strong> – Tipo de mazo a utilizar. «español» o «francés».</p></li>
+<li><p><strong>figuras</strong> – Figuras a utilizar, puede ser cualquier número o cualquier</p></li>
+<li><p><strong>los</strong> (<em>string en el caso de tratarse de una letra. Ver abajo</em>) – valores aceptados.</p></li>
+<li><p><strong>palos</strong> – Palos a utilizar, ver abajo los valores aceptados.</p></li>
+<li><p><strong>cant_comodines</strong> – Cantidad de comodines a utilizar.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Valores aceptados</p>
+<ul class="simple">
+<li><p>«español»</p>
+<ul>
+<li><p>Figuras: int desde 1 al 12.</p></li>
+<li><p>Palos: «espada», «oro», «basto» y «copas».</p></li>
+</ul>
+</li>
+<li><p>«francés»</p>
+<ul>
+<li><p>Figuras: int desde 2 al 10, sino puede ser un str de los posibles:
+«A», «J», «Q», «K».</p></li>
+<li><p>Palos: «espada», «oro», «basto» y copas».</p></li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.mezclar">
+<span class="sig-name descname"><span class="pre">mezclar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.mezclar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.mezclar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Mezclar las cartas.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.poner">
+<span class="sig-name descname"><span class="pre">poner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.poner"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.poner" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Poner una carta o un mazo encima de este mazo.</p>
+<p>Al poner un mazo se vacía al otro mazo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.tomar">
+<span class="sig-name descname"><span class="pre">tomar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.tomar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.tomar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Tomar una carta del mazo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cartas.Mazo.vaciar">
+<span class="sig-name descname"><span class="pre">vaciar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/cartas.html#Mazo.vaciar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#cartas.Mazo.vaciar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Elimina todas las cartas del mazo.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="cartas.PALOS_POSIBLES">
+<span class="sig-prename descclassname"><span class="pre">cartas.</span></span><span class="sig-name descname"><span class="pre">PALOS_POSIBLES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'español':</span> <span class="pre">['espada',</span> <span class="pre">'oro',</span> <span class="pre">'basto',</span> <span class="pre">'copas'],</span> <span class="pre">'francés':</span> <span class="pre">['pica',</span> <span class="pre">'corazón',</span> <span class="pre">'trébol',</span> <span class="pre">'diamante']}</span></em><a class="headerlink" href="#cartas.PALOS_POSIBLES" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Palos soportados por Carta.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="ActividadCalculadora.html" class="btn btn-neutral float-left" title="ActividadCalculadora module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, Deyberth.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
